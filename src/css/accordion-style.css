@@ -1,0 +1,68 @@
+
+.accordion-usl ul{
+    list-style: circle;
+    /* list-style-image: url('./../images/sqorange.gif'); */
+    list-style-image: linear-gradient(to left bottom, #666, #333);;
+    /* list-style-type: square !important; */
+    list-style-position: outside;
+    padding-left: 15px !important;
+}
+.accordion-item li{
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px 0 10px 10px;
+    border: 0 !important;
+    margin-top: 0 !important;
+    float: none !important;
+    width: 100% !important;
+}
+.accordion-header{
+    padding-bottom: 0px;    
+    background-color: #fff;
+    border: 1px solid rgba(244, 123, 32, 0.7);
+    padding: 0;
+    color: #333;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;    
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+.accordion-button{
+    color: #f47b20;
+    padding-left: 40px;
+    /* display: inlin; */
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 22px;
+}
+.accordion-button::after{
+    content: "\f067";
+    font-family: fontawesome;
+    background-image: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 6px 10px;
+    top: 5px;
+}
+.accordion-button:not(.collapsed){
+    color: #f47b20;
+    background-color: transparent;
+    box-shadow: none;
+} 
+.accordion-button:not(.collapsed)::after{
+    content: "\f068";
+    font-family: fontawesome;
+    background-image: none;
+}
+.accordion-body h3{
+    color: #f47b20 !important;
+}
+.accordion-body p{
+    color: #777777 !important;
+    margin: 0 0 10px;
+    text-align: justify;
+    line-height: 26px;
+}

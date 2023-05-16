@@ -7,12 +7,6 @@ import slide3 from './../images/slider/slide3.jpg';
 import './../css/slider-style.css';
 import { Interweave } from 'interweave';
   
-const divStyle = {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundSize: 'cover',
-    height: '500px'
-}
 const slideImages = [
     {
         url: slide1,

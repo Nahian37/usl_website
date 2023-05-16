@@ -1,16 +1,15 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
+import $ from 'jquery';
 
-const ImportScript = (resourceUrl) => {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = resourceUrl;
-        script.async = true;
-        script.type = 'text/jsx';
-        document.body.appendChild(script);
-    return () => {
-            document.body.removeChild(script);
-        }
-    }, [resourceUrl]);
+const ImportScript = () => {
+    useEffect(()=>{
+        $('[data-bg-img]').each(function() {
+            $(this).css('background-image', 'url(' + $(this).data("bg-img") + ')');
+        });
+        $('[data-margin-top]').each(function() {
+            $(this).css('margin-top', $(this).data("margin-top"));
+        });
+    },[]);
 }
 
 export default ImportScript

@@ -1,13 +1,14 @@
 import React from 'react';
 import './../css/navbar.css';
 import menuImage from './../images/megamenu/megamenu-dropdown.jpg';
+import { Link } from 'react-router-dom';
 
-const Navbar3 = (props) => {
+const Navbar3 = ({imgObject}) => {
   return (
     <>        
     <nav>
         <div class="wrapper">
-        <div class="logo"><a href="#"><img src={props.logo} alt=""/></a></div>
+        <div class="logo"><a href="/"><img src={imgObject.logo} alt=""/></a></div>
         <input type="radio" name="slider" id="menu-btn"/>
         <input type="radio" name="slider" id="close-btn"/>
         <ul class="nav-links">
@@ -24,11 +25,11 @@ const Navbar3 = (props) => {
                         <div class="row">
                             <header>About Us</header>
                             <ul class="mega-links">
-                                <li><a href="{{ route('aboutWho') }}">The Company (Who we are)</a></li>
-                                <li><a href="{{ route('aboutBod') }}">Board of Directors</a></li>
-                                <li><a href="{{ route('aboutLeadership') }}">Leadership</a></li>
-                                <li><a href="{{ route('aboutPeople') }}">Our People</a></li>
-                                <li><a href="{{ route('aboutMission') }}">Our Values/Culture</a></li>
+                                <li><Link to="/about/who-we-are">The Company (Who we are)</Link></li>
+                                <li><Link to="/about/bod">Board of Directors</Link></li>
+                                <li><Link to="/about/leadership">Leadership</Link></li>
+                                <li><Link to="/about/our-people">Our People</Link></li>
+                                <li><Link to="/about/values">Our Values/Culture</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +47,7 @@ const Navbar3 = (props) => {
                         <div class="row">
                             <header>Our Thinking</header>
                             <ul class="mega-links">
-                                <li><a href="{{ route('thinkingWhyusl') }}">Why United Securities Limited</a></li>
+                                <li><Link to="/our-thinking/why-usl">Why United Securities Limited</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -64,11 +65,11 @@ const Navbar3 = (props) => {
                         <div class="row">
                             <header>Insight & Research</header>
                             <ul class="mega-links">
-                                <li><a href="{{ route('rOverview') }}">Overview</a></li>
-                                <li><a href="{{ route('researchDaily') }}">Daily</a></li>
-                                <li><a href="{{ route('researchWeekly') }}">Weekly</a></li>
-                                <li><a href="{{ route('researchEconomy') }}">Economy</a></li>
-                                <li><a href="{{ route('researchCompany') }}">Company updates</a></li>
+                                <li><Link to="/research/overview">Overview</Link></li>
+                                <li><Link to="/research/daily">Daily</Link></li>
+                                <li><Link to="/research/weekly">Weekly</Link></li>
+                                <li><Link to="/research/economy">Economy</Link></li>
+                                <li><Link to="/research/company">Company updates</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -86,11 +87,11 @@ const Navbar3 = (props) => {
                         <div class="row">
                             <header>Solution & Services</header>
                             <ul class="mega-links">
-                                <li><a href="{{ route('serviceForeign') }}">Foreign Institution</a></li>
-                                <li><a href="{{ route('serviceNrb') }}">Non Resident Bangladeshi (NRB)</a></li>
-                                <li><a href="{{ route('serviceIndividual') }}">Local Individual</a></li>
-                                <li><a href="{{ route('serviceInstitution') }}">Local Institution</a></li>
-                                <li><a href="{{ route('serviceDownloads') }}">Downloads</a></li>
+                                <li><Link to="/service/foreign">Foreign Institution</Link></li>
+                                <li><Link to="/service/nrb">Non Resident Bangladeshi (NRB)</Link></li>
+                                <li><Link to="/service/individual">Local Individual</Link></li>
+                                <li><Link to="/service/institution">Local Institution</Link></li>
+                                <li><Link to="/service/downloads">Downloads</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -108,8 +109,8 @@ const Navbar3 = (props) => {
                         <div class="row">
                             <header>Connect us</header>
                             <ul class="mega-links">
-                                <li><a href="{{ route('homeContactus') }}">Address</a></li>
-                                <li><a href="{{ route('contactusBranch') }}">Our Branch</a></li>
+                                <li><Link to="/contactus">Address</Link></li>
+                                <li><Link to="/contactus/branch">Our Branch</Link></li>
                                 <li><a href="https://www.facebook.com/UnitedSecuritiesLtd/">Social Media links</a></li>
                             </ul>
                         </div>

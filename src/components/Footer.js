@@ -1,7 +1,8 @@
 import React from 'react';
 import './../css/footer.css';
+import { Link } from 'react-router-dom';
 
-const Footer = (props) => {
+const Footer = ({imgObject}) => {
     const year = new Date().getFullYear();
   return (
     <>
@@ -10,7 +11,7 @@ const Footer = (props) => {
             <div className="row border-bottom">
                 <div className="col-sm-6 col-md-3">
                     <div className="widget dark">
-                        <img className="mt-5 mb-20" alt="" src={props.logo}/>
+                        <img className="mt-5 mb-20" alt="" src={imgObject.logo}/>
                         <p>Gulshan Centre Point, Level 8,<br></br>
                         House 23-26, Road 90,<br></br>
                         Gulshan 2, Dhaka 1212, Bangladesh<br></br></p>
@@ -25,16 +26,16 @@ const Footer = (props) => {
                 <div className="widget dark">
                     <h4 className="widget-title">About Us </h4>
                     <ul className="list angle-double-right list-border">
-                        <li><a href="{{ route('aboutWho') }}">The Company (Who we are)</a></li>
-                        <li><a href="{{ route('aboutBod') }}">Board of Directors</a></li>
-                        <li><a href="{{ route('aboutLeadership') }}">Leadership</a></li>
-                        <li><a href="{{ route('aboutPeople') }}">Our People</a></li>
-                        <li><a href="{{ route('aboutMission') }}">Our Values/Culture (Mission/ Vision)</a></li>          
+                        <li><Link to="/about/who-we-are">The Company (Who we are)</Link></li>
+                        <li><Link to="/about/bod">Board of Directors</Link></li>
+                        <li><Link to="/about/leadership">Leadership</Link></li>
+                        <li><Link to="/about/our-people">Our People</Link></li>
+                        <li><Link to="/about/values">Our Values/Culture (Mission/ Vision)</Link></li>          
                     </ul>
                     <br></br>
                     <h4 className="widget-title">Our Thinking </h4>
                     <ul className="list angle-double-right list-border">
-                        <li><a href="{{ route('thinkingWhyusl') }}">Why United Securities Limited</a></li>
+                        <li><Link to="/our-thinking/why-usl">Why United Securities Limited</Link></li>
                     </ul>
                 </div>
             </div>
@@ -42,10 +43,10 @@ const Footer = (props) => {
                 <div className="widget dark">
                     <h4 className="widget-title">Our Services </h4>
                     <ul className="list angle-double-right list-border">
-                        <li><a href="{{ route('serviceForeign') }}">Foreign Institution</a></li>
-                        <li><a href="{{ route('serviceNrb') }}">Non Resident Bangladeshi (NRB)</a></li>
-                        <li><a href="{{ route('serviceIndividual') }}">Local Individual</a></li>
-                        <li><a href="{{ route('serviceInstitution') }}">Local Institution</a></li>
+                        <li><Link to="/service/foreign">Foreign Institution</Link></li>
+                        <li><Link to="/service/nrb">Non Resident Bangladeshi (NRB)</Link></li>
+                        <li><Link to="/service/individual">Local Individual</Link></li>
+                        <li><Link to="/service/institution">Local Institution</Link></li>
                     </ul>
                     <br></br>
 

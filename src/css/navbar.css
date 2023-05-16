@@ -3,13 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 nav{
   position: fixed;
   z-index: 99;
-  width: 100%;
-  
+  width: 100%;  
   background: #fff;
 }
 nav .wrapper{
@@ -96,7 +95,7 @@ nav .wrapper{
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .mega-box .content .row{
-  width: calc(25% - 30px);
+  width: calc(30% - 30px);
   line-height: 45px;
 }
 .content .row img{
