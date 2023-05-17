@@ -79,92 +79,47 @@ function App() {
   },[]);
   return (
     <>
-    <div className="body-overlay"></div>
-	
-    <div id="wrapper" className="clearfix">
-    <BrowserRouter>
-      <Navbar3 imgObject={imgObject}/>
-      <div className="main-content">
-        <Routes>
-          {/* About */}
-          <Route exact path="/" element={<Content/>}/>
-          <Route exact path="/about/who-we-are" element={<Whoweare imgObject={imgObject}/>}/>
-          <Route exact path="/about/bod" element={<Boardofdirector imgObject={imgObject}/>}/>
-          <Route exact path="/about/leadership" element={<Leadership imgObject={imgObject}/>}/>
-          <Route exact path="/about/our-people" element={<Ourpeople imgObject={imgObject}/>}/>
-          <Route exact path="/about/values" element={<Values imgObject={imgObject}/>}/>
-          {/* Our Thinking */}
-          <Route exact path="/our-thinking/why-usl" element={<Whyusl imgObject={imgObject}/>}/>
-          {/* Research */}
-          <Route exact path="/research/overview" element={<Overview imgObject={imgObject}/>}/>
-          <Route exact path="/research/daily" element={<Daily imgObject={imgObject}/>}/>
-          <Route exact path="/research/weekly" element={<Weekly imgObject={imgObject}/>}/>
-          <Route exact path="/research/economy" element={<Economy imgObject={imgObject}/>}/>
-          <Route exact path="/research/company" element={<Company imgObject={imgObject}/>}/>
-          {/* Services */}
-          <Route exact path="/service/foreign" element={<Foreign imgObject={imgObject}/>}/>
-          <Route exact path="/service/nrb" element={<Nrb imgObject={imgObject}/>}/>
-          <Route exact path="/service/individual" element={<Individual imgObject={imgObject}/>}/>
-          <Route exact path="/service/institution" element={<Institution imgObject={imgObject}/>}/>
-          <Route exact path="/service/downloads" element={<Downloads imgObject={imgObject}/>}/>
-          {/* Contact Us */}
-          <Route exact path="/contactus" element={<Contactus imgObject={imgObject}/>}/>
-          <Route exact path="/contactus/branch" element={<Branch imgObject={imgObject}/>}/>
-        </Routes>
+      <div className="body-overlay"></div>
+    
+      <div id="wrapper" className="clearfix">
+        <BrowserRouter>
+          <Navbar3 imgObject={imgObject}/>
+          <div className="main-content">
+            <Routes>
+              {/* About */}
+              <Route exact path="/" element={<Content/>}/>
+              <Route exact path="/about/who-we-are" element={<Whoweare imgObject={imgObject}/>}/>
+              <Route exact path="/about/bod" element={<Boardofdirector imgObject={imgObject}/>}/>
+              <Route exact path="/about/leadership" element={<Leadership imgObject={imgObject}/>}/>
+              <Route exact path="/about/our-people" element={<Ourpeople imgObject={imgObject}/>}/>
+              <Route exact path="/about/values" element={<Values imgObject={imgObject}/>}/>
+              {/* Our Thinking */}
+              <Route exact path="/our-thinking/why-usl" element={<Whyusl imgObject={imgObject}/>}/>
+              {/* Research */}
+              <Route exact path="/research/overview" element={<Overview imgObject={imgObject}/>}/>
+              <Route exact path="/research/daily" element={<Daily imgObject={imgObject}/>}/>
+              <Route exact path="/research/weekly" element={<Weekly imgObject={imgObject}/>}/>
+              <Route exact path="/research/economy" element={<Economy imgObject={imgObject}/>}/>
+              <Route exact path="/research/company" element={<Company imgObject={imgObject}/>}/>
+              {/* Services */}
+              <Route exact path="/service/foreign" element={<Foreign imgObject={imgObject}/>}/>
+              <Route exact path="/service/nrb" element={<Nrb imgObject={imgObject}/>}/>
+              <Route exact path="/service/individual" element={<Individual imgObject={imgObject}/>}/>
+              <Route exact path="/service/institution" element={<Institution imgObject={imgObject}/>}/>
+              <Route exact path="/service/downloads" element={<Downloads imgObject={imgObject}/>}/>
+              {/* Contact Us */}
+              <Route exact path="/contactus" element={<Contactus imgObject={imgObject}/>}/>
+              <Route exact path="/contactus/branch" element={<Branch imgObject={imgObject}/>}/>
+            </Routes>
+          </div>
+          
+          
+          <Footer imgObject={imgObject}/>
+          <a className="scrollToTop" href="#"><i className="fa fa-angle-up"></i></a>
+        </BrowserRouter>
       </div>
-      
-      
-      <Footer imgObject={imgObject}/>
-      <a className="scrollToTop" href="#"><i className="fa fa-angle-up"></i></a>
-    </BrowserRouter>
-    </div>
     </>
   );
 }
 
 export default App;
-
-
-// const statuses = { }; // loading, loaded, import calls chain
-
-// const loadScript= (src) => {
-//   const status = statuses[src] || (statuses[src] = { });
-// if (status.loaded || status.loading) {
-//   return status.promise;
-// }
-// status.loading = true;
-// status.promise = new Promise((resolve, reject) => {
-//      if (!document.head) {
-//           status.loading = false;
-//           reject('Load JavaScript file in web site body or after head is ready.');
-//           return;
-//       }
-//       const script = document.createElement('script');
-//       script.addEventListener('load', () => {
-//           status.loaded = true;
-//           status.loading = false;
-//           resolve();
-//       });
-//       script.addEventListener('error', () => {
-//           status.loaded = true;
-//           status.loading = false;
-//           reject('JavaScript file loading error (check script url or network connection).');
-//       });
-//       script.async = true;
-//       script.src = src;
-//       document.head.appendChild(script);
-//   });
-// return status.promise;
-// };
-
-  // useEffect(()=>{
-  //   loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js')
-  //     .then(() => {
-  //         console.log('Script loading');
-  //     })
-  //     .catch(console.error);
-
-  //   loadScript('./assets/js/custom.js')
-  //     .then(() => console.log('Only waiting for the script'))
-  //     .catch(console.error);
-  // },[]);
