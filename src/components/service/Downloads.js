@@ -36,7 +36,7 @@ const Downloads = ({imgObject}) => {
                             <h2 className="title text-white">Downloads</h2>
                             <ol className="breadcrumb text-left text-black mt-10">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Solutions & Services</a></li>
                                 <li className="active text-gray-silver">Downloads</li>
                             </ol>
                         </div>

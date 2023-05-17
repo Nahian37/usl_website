@@ -22,7 +22,7 @@ const Branch = ({imgObject}) => {
                             <h2 className="title text-white">Our Branch</h2>
                             <ol className="breadcrumb text-left text-black mt-10">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Connect us</a></li>
                                 <li className="active text-gray-silver">Our Branch</li>
                             </ol>
                         </div>
