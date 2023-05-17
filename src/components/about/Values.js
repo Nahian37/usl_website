@@ -48,7 +48,7 @@ const Values = ({imgObject}) => {
                                         <a className="active" data-toggle="collapse" href="#" aria-expanded="true"><span className="open-sub"></span>Core Values</a> 
                                     </div>
                                 </div>
-                                <div id="toggle0" className="panel-collapse collapse in" aria-aria-expanded="true">
+                                <div id="toggle0" className="panel-collapse collapse in" aria-expanded="true">
                                     <div className="panel-body text-content">
                                         <ul>
                                             <li>Ensuring sustainable growth of wealth for our investors and helping our clients reach their financial goals.</li>

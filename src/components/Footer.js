@@ -52,11 +52,11 @@ const Footer = ({imgObject}) => {
 
                     <h4 className="widget-title">Useful Links</h4>
                     <ul className="list angle-double-right list-border">
-                        <li><a className="tips" title="Bangladesh Securities and Exchange Commission" target="_blank" href="http://www.sec.gov.bd/">Bangladesh Securities and Exchange Commission</a></li>
-                        <li><a href="http://dse.com.bd/" className="tips" title="Dhaka Stock Exchange Ltd" target="_blank"> Dhaka Stock Exchange Ltd</a></li>
-                        <li><a href="https://www.cse.com.bd/" className="tips" title="Chittagong Stock Exchange" target="_blank">Chittagong Stock Exchange Ltd</a></li>                
-                        <li><a href="https://www.cdbl.com.bd/" className="tips" title="CDBL" target="_blank">Central Depository Bangladesh Ltd</a></li>                
-                        <li><a href="https://www.bb.org.bd/" className="tips" title="BSEC" target="_blank">Bangladesh Bank</a></li>      
+                        <li><a className="tips" title="Bangladesh Securities and Exchange Commission" rel="noreferrer" target="_blank" href="https://sec.gov.bd/">Bangladesh Securities and Exchange Commission</a></li>
+                        <li><a href="http://dse.com.bd/" className="tips" title="Dhaka Stock Exchange Ltd" rel="noreferrer" target="_blank"> Dhaka Stock Exchange Ltd</a></li>
+                        <li><a href="https://www.cse.com.bd/" className="tips" title="Chittagong Stock Exchange" rel="noreferrer" target="_blank">Chittagong Stock Exchange Ltd</a></li>                
+                        <li><a href="https://www.cdbl.com.bd/" className="tips" title="CDBL" rel="noreferrer" target="_blank">Central Depository Bangladesh Ltd</a></li>                
+                        <li><a href="https://www.bb.org.bd/" className="tips" title="BSEC" rel="noreferrer" target="_blank">Bangladesh Bank</a></li>      
                     </ul>
                 </div>
             </div>
@@ -77,8 +77,8 @@ const Footer = ({imgObject}) => {
                 <div className="widget dark" id="social-media">
                     <h5 className="widget-title mb-10">Connect With Us</h5>
                     <ul className="styled-icons icon-bordered icon-sm">
-                        <li><a href="https://www.facebook.com/UnitedSecuritiesLtd/"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/uslbd/"><i className="fa fa-linkedin"></i></a></li>                
+                        <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/UnitedSecuritiesLtd/"><i className="fa fa-facebook"></i></a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/uslbd/"><i className="fa fa-linkedin"></i></a></li>                
                     </ul>
                 </div>
             </div>
@@ -87,7 +87,7 @@ const Footer = ({imgObject}) => {
             <div className="col-md-12">
                 <div className="widget dark text-center">
                     <p>USL has a dedicated expert research team and a foreign desk, which provide both insights on the local market and execute trades on behalf of foreign institutional clients. It also works on supporting the foreign fund managers with arranging roadshows and management meetings with the local investee companies.</p>
-                    <a href="#" target="_blank" className="text-center" style={{color:"#09F"}}>Know More</a>
+                    <a href="#" rel="noreferrer" target="_blank" className="text-center" style={{color:"#09F"}}>Know More</a>
                 </div>
             </div>
         </div>

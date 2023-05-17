@@ -69,91 +69,91 @@ const Downloads = ({imgObject}) => {
                                         <th className="text-center" scope="row">1</th>
                                         <td>USL CUSTOMER ACCOUNT OPENING FORM (Individual)</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={indv_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={indv_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">2</th>
                                         <td>USL CORPORATE CLIENT ACCOUNT OPENING FORM</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={inst_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={inst_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">3</th>
                                         <td>Fund Requisition Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={fund_req_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={fund_req_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">4</th>
                                         <td>Transfer Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={trf_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={trf_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">5</th>
                                         <td>Transmission Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={trm_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={trm_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">6</th>
                                         <td>Customer Account Information Change</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={info_cng_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={info_cng_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">7</th>
                                         <td>Pledge Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={pledge_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={pledge_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">8</th>
                                         <td>Unpledge Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={unpledge_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={unpledge_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">9</th>
                                         <td>Dematerialization Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={demat_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={demat_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">10</th>
                                         <td>Rematerialization Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={remat_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={remat_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">11</th>
                                         <td>Confiscate Request Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={conf_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={conf_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">12</th>
                                         <td>Account Close Form</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href={close_form}><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href={close_form}><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>
                                     <tr className="">
                                         <th className="text-center" scope="row">13</th>
                                         <td>USL Corporate Profile</td>
                                         <td className="text-center">
-                                            <a rel="noreferrer" target="_blank" href=""><img src={detailImg} border="0"/> <small>Click here</small></a>
+                                            <a rel="noreferrer" target="_blank" href=""><img src={detailImg} alt="" border="0"/> <small>Click here</small></a>
                                         </td>
                                     </tr>                                    
                                 </tbody>

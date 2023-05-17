@@ -7,6 +7,7 @@ import lg1 from './../images/services/lg1.jpg';
 import lg2 from './../images/services/lg2.jpg';
 import lg3 from './../images/services/lg3.jpg';
 import Slider from './Slider';
+import { Link } from 'react-router-dom';
 
 const Content = () => {
   return (
@@ -32,9 +33,7 @@ const Content = () => {
                 <div class="col-sm-12 col-md-4">
                   <div class="post icon-box iconbox-theme-colored bg-white border-1px text-center">
                     <div class="entry-content">
-                      <a  href="{{ route('aboutBod') }}">
-                        <img src={bordofdir}/>
-                      </a>
+                      <Link to="/about/bod"><img src={bordofdir} alt=""/></Link>
                       <h3 class="mt-10">Board of Directors</h3>
                     </div>                
                   </div>
@@ -42,9 +41,7 @@ const Content = () => {
                 <div class="col-sm-12 col-md-4">
                   <div class="post icon-box  iconbox-theme-colored bg-white border-1px text-center">
                     <div class="entry-content ">
-                      <a  href="{{ route('aboutLeadership') }}">
-                        <img src={leadership}/>
-                      </a>
+                      <Link to="/about/leadership"><img src={leadership} alt=""/></Link>
                       <h3 class="mt-10">Leadership</h3>
                     </div>                
                   </div>
@@ -52,8 +49,7 @@ const Content = () => {
                 <div class="col-sm-12 col-md-4">
                   <div class="post icon-box iconbox-theme-colored bg-white border-1px text-center">
                     <div class="entry-content " >
-                      <a  href="{{ route('aboutPeople') }}">
-                      <img src={people}/></a>
+                      <Link to="/about/our-people"><img src={people} alt=""/></Link>
                       <h3 class="mt-10">Our People</h3>
                     </div>                
                   </div>
@@ -126,9 +122,7 @@ const Content = () => {
                       <div class="row">
                         <div class="one-12">
                           <div class="text-content text-center">
-                            <p>
-                              <a class="btn btn-theme-colored3 btn-border " href="{{ route('serviceForeign') }}"> View Details</a>
-                            </p>
+                            <p><Link class="btn btn-theme-colored3 btn-border" to="/service/foreign"> View Details</Link></p>
                           </div>
                         </div>
                       </div>
@@ -173,9 +167,7 @@ const Content = () => {
                       <div class="row">
                         <div class="one-12">
                           <div class="text-content text-center">
-                            <p>
-                              <a class="btn btn-theme-colored3 btn-border " href="{{ route('serviceNrb') }}"> View Details</a>
-                            </p>
+                            <p><Link class="btn btn-theme-colored3 btn-border" to="/service/nrb"> View Details</Link></p>
                           </div>
                         </div>
                       </div>
@@ -187,7 +179,6 @@ const Content = () => {
                           <div class="text-tabs">
                             <div class="text-content">
                               <h3>Required Documents for Opening Individual/ Joint Account</h3>
-
                               <ul>
                                 <li>Three copies of Passport size photographs of each account holder(s) (Photographs must be signed by ALL account holders)</li>
                                 <li>National ID or Photocopy of valid Passport/ Driving License/ Nationality Certificate/ e-TIN certificate of the account holder(s) (Duly signed by ALL account holders)</li>
@@ -204,9 +195,7 @@ const Content = () => {
                       <div class="row">
                         <div class="one-12">
                           <div class="text-content text-center">
-                            <p>
-                              <a class="btn btn-theme-colored3 btn-border " href="{{ route('serviceIndividual') }}"> View Details</a>
-                            </p>
+                            <p><Link class="btn btn-theme-colored3 btn-border" to="/service/individual"> View Details</Link></p>
                           </div>
                         </div>
                       </div>
@@ -226,9 +215,7 @@ const Content = () => {
                       <div class="row">
                         <div class="one-12">
                           <div class="text-content text-center">
-                            <p>
-                              <a class="btn btn-theme-colored3 btn-border " href="{{ route('serviceInstitution') }}"> View Details</a>
-                            </p>
+                            <p><Link class="btn btn-theme-colored3 btn-border" to="/service/institution"> View Details</Link></p>
                           </div>
                         </div>
                       </div>
@@ -256,7 +243,7 @@ const Content = () => {
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <div class="feature-content box1 text-center">
-                      <div class="img-box"><img src={lg1}/></div>
+                      <div class="img-box"><img src={lg1} alt=""/></div>
                       <h3>Daily Weekly</h3>
                       <h4>report</h4>
                       <a href="#">Readmore <i class="fa fa-caret-right"></i></a>
@@ -264,7 +251,7 @@ const Content = () => {
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <div class="feature-content box1 text-center">
-                      <div class="img-box"><img src={lg2}/></div>
+                      <div class="img-box"><img src={lg2} alt=""/></div>
                       <h3>Macroeconomy</h3>
                       <h4>report</h4>
                       <a href="#">Readmore <i class="fa fa-caret-right"></i></a>
@@ -272,7 +259,7 @@ const Content = () => {
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <div class="feature-content box1 text-center">
-                      <div class="img-box"><img src={lg3}/></div>
+                      <div class="img-box"><img src={lg3} alt=""/></div>
                       <h3>Coverage</h3>
                       <h4>report</h4>
                       <a href="#">Readmore <i class="fa fa-caret-right"></i></a>
