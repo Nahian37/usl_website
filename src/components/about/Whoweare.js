@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 
 
 const Whoweare = ({imgObject}) => {
@@ -65,9 +66,9 @@ const Whoweare = ({imgObject}) => {
 				    <div className="col-sm-12 col-md-4">
 					    <div className="post icon-box iconbox-theme-colored bg-white border-1px text-center">
 						    <div className="entry-content">
-							    <a  href="{{ route('aboutBod') }}">
+							    <Link to="/about/bod">
 								    <img src={imgObject.bordofdir} alt=""/>
-							    </a>
+							    </Link>
 							    <h3 className="mt-10">Board of Directors</h3>
 						    </div>                
 					    </div>
@@ -75,9 +76,9 @@ const Whoweare = ({imgObject}) => {
 				    <div className="col-sm-12 col-md-4">
 					    <div className="post icon-box  iconbox-theme-colored bg-white border-1px text-center">
 						    <div className="entry-content ">
-                                <a  href="{{ route('aboutLeadership') }}">
+                                <Link to="/about/leadership">
                                     <img src={imgObject.leadership} alt=""/>
-                                </a>
+                                </Link>
 							    <h3 className="mt-10">Leadership</h3>
 						    </div>                
 					    </div>
@@ -85,9 +86,9 @@ const Whoweare = ({imgObject}) => {
 				    <div className="col-sm-12 col-md-4">
 					    <div className="post icon-box iconbox-theme-colored bg-white border-1px text-center">
 						    <div className="entry-content " >
-							    <a  href="{{ route('aboutPeople') }}">
+							    <Link to="/about/our-people">
 								    <img src={imgObject.people} alt=""/>
-                                </a>
+                                </Link>
 								<h3 className="mt-10">Our People</h3>
 							</div>                
 						</div>
